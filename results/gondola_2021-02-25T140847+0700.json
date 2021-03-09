@@ -1,0 +1,321 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 0,
+    "passes": 0,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-02-25T07:08:42.677Z",
+    "end": "2021-02-25T07:08:46.973Z",
+    "duration": 4296,
+    "testsRegistered": 3,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 2,
+    "hasOther": true,
+    "skipped": 3,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "3c7ed4fb-baca-4403-84cd-fa3ccc9dcb43",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "910a4f6e-8f88-4855-a30b-8a056ee2309a",
+          "title": "Demo Test Module",
+          "fullFile": "E:\\Penske\\Gondola\\web101\\built\\tests\\demo_test.js",
+          "file": "\\built\\tests\\demo_test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook: codeceptjs.beforeSuite",
+              "fullTitle": "Demo Test Module \"before all\" hook: codeceptjs.beforeSuite",
+              "timedOut": false,
+              "duration": 1,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteSetup(suite)",
+              "err": {},
+              "uuid": "e0ac49dd-0a43-4e35-9162-f6c86dbd5a32",
+              "parentUUID": "910a4f6e-8f88-4855-a30b-8a056ee2309a",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"before each\" hook: codeceptjs.before for \"Demo 1 @regression\"",
+              "fullTitle": "Demo Test Module \"before each\" hook: codeceptjs.before for \"Demo 1 @regression\"",
+              "timedOut": false,
+              "duration": 2142,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "scenario.setup(suite)",
+              "err": {
+                "message": "Error: Can't connect to WebDriver.\nError: Failed to create session.\nUnable to connect to \"http://localhost:4444/wd/hub\", make sure browser driver is running on that address.\nIf you use services like chromedriver see initialiseServices logs above or in wdio.log file as the service might had problems to start the driver.\n\nPlease make sure Selenium Server (ChromeDriver or PhantomJS) is running and accessible",
+                "estack": "Can't connect to WebDriver.\nError: Failed to create session.\nUnable to connect to \"http://localhost:4444/wd/hub\", make sure browser driver is running on that address.\nIf you use services like chromedriver see initialiseServices logs above or in wdio.log file as the service might had problems to start the driver.\n\nPlease make sure Selenium Server (ChromeDriver or PhantomJS) is running and accessible",
+                "diff": null
+              },
+              "uuid": "d645ed5c-7a5c-4d70-bdbb-d352dd2abfdd",
+              "parentUUID": "910a4f6e-8f88-4855-a30b-8a056ee2309a",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook: codeceptjs.afterSuite",
+              "fullTitle": "Demo Test Module \"after all\" hook: codeceptjs.afterSuite",
+              "timedOut": false,
+              "duration": 1,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteTeardown(suite)",
+              "err": {},
+              "uuid": "34f50d7c-0f1b-4da2-a3db-55d59bf9ce66",
+              "parentUUID": "910a4f6e-8f88-4855-a30b-8a056ee2309a",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"after each\" hook: finalize codeceptjs",
+              "fullTitle": "Demo Test Module \"after each\" hook: finalize codeceptjs",
+              "timedOut": false,
+              "duration": 1,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.teardown(suite)",
+              "err": {},
+              "uuid": "75eb01e8-901d-4b28-80cd-4d80986adc37",
+              "parentUUID": "910a4f6e-8f88-4855-a30b-8a056ee2309a",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Demo 1 @regression",
+              "fullTitle": "Demo Test Module: Demo 1 @regression",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await gondola_1.gondola.navigate(\"https://demo.gondolatest.com\");\nawait ShopActions_1.default.checkTotalPayment(\"239.97\");",
+              "err": {},
+              "uuid": "60a67ed1-4507-4612-bde6-c19aacbb6709",
+              "parentUUID": "910a4f6e-8f88-4855-a30b-8a056ee2309a",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Demo 2 @smoke",
+              "fullTitle": "Demo Test Module: Demo 2 @smoke",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await gondola_1.gondola.navigate(\"https://demo.gondolatest.com\");\nawait ShopActions_1.default.checkTotalPayment(\"239.98\");",
+              "err": {},
+              "uuid": "ba1c31d2-351e-4600-9ed3-12b4597ffa3c",
+              "parentUUID": "910a4f6e-8f88-4855-a30b-8a056ee2309a",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [
+            "60a67ed1-4507-4612-bde6-c19aacbb6709",
+            "ba1c31d2-351e-4600-9ed3-12b4597ffa3c"
+          ],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 0
+        },
+        {
+          "uuid": "0d1a3672-0715-48aa-b677-f077c7ad7663",
+          "title": "Simple Test",
+          "fullFile": "E:\\Penske\\Gondola\\web101\\built\\tests\\demo_test.js",
+          "file": "\\built\\tests\\demo_test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook: codeceptjs.beforeSuite",
+              "fullTitle": "Simple Test \"before all\" hook: codeceptjs.beforeSuite",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteSetup(suite)",
+              "err": {},
+              "uuid": "1ad2dda5-24b3-4fa5-8aec-4bfa4f7a7019",
+              "parentUUID": "0d1a3672-0715-48aa-b677-f077c7ad7663",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"before each\" hook: codeceptjs.before for \"1st simple test case\"",
+              "fullTitle": "Simple Test \"before each\" hook: codeceptjs.before for \"1st simple test case\"",
+              "timedOut": false,
+              "duration": 2008,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "scenario.setup(suite)",
+              "err": {
+                "message": "Error: Can't connect to WebDriver.\nError: Failed to create session.\nUnable to connect to \"http://localhost:4444/wd/hub\", make sure browser driver is running on that address.\nIf you use services like chromedriver see initialiseServices logs above or in wdio.log file as the service might had problems to start the driver.\n\nPlease make sure Selenium Server (ChromeDriver or PhantomJS) is running and accessible",
+                "estack": "Can't connect to WebDriver.\nError: Failed to create session.\nUnable to connect to \"http://localhost:4444/wd/hub\", make sure browser driver is running on that address.\nIf you use services like chromedriver see initialiseServices logs above or in wdio.log file as the service might had problems to start the driver.\n\nPlease make sure Selenium Server (ChromeDriver or PhantomJS) is running and accessible",
+                "diff": null
+              },
+              "uuid": "7a9c9d18-0b4d-410e-9d6b-6537c18c97f9",
+              "parentUUID": "0d1a3672-0715-48aa-b677-f077c7ad7663",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook: codeceptjs.afterSuite",
+              "fullTitle": "Simple Test \"after all\" hook: codeceptjs.afterSuite",
+              "timedOut": false,
+              "duration": 1,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteTeardown(suite)",
+              "err": {},
+              "uuid": "efb47cde-3188-4992-8f8a-d5c3f0289d2d",
+              "parentUUID": "0d1a3672-0715-48aa-b677-f077c7ad7663",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"after each\" hook: finalize codeceptjs",
+              "fullTitle": "Simple Test \"after each\" hook: finalize codeceptjs",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.teardown(suite)",
+              "err": {},
+              "uuid": "d32b38cb-640d-4319-9345-6b1f5920186a",
+              "parentUUID": "0d1a3672-0715-48aa-b677-f077c7ad7663",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "1st simple test case",
+              "fullTitle": "Simple Test: 1st simple test case",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await gondola_1.gondola.navigate(\"http://google.com\");\nawait gondola_1.gondola.checkWindowExist(\"Google\");",
+              "err": {},
+              "uuid": "de006e1e-93e1-491e-a8a5-c3b7406003d7",
+              "parentUUID": "0d1a3672-0715-48aa-b677-f077c7ad7663",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [
+            "de006e1e-93e1-491e-a8a5-c3b7406003d7"
+          ],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 0
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 0
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "6.2.3"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "gondola",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "results",
+        "inlineAssets": true,
+        "timestamp": "isoDateTime",
+        "reportFilename": "gondola",
+        "autoOpen": true,
+        "reportPageTitle": "Gondola Test Result"
+      },
+      "version": "5.1.0"
+    }
+  }
+}

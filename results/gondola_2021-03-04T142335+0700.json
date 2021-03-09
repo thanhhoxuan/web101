@@ -1,0 +1,321 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 0,
+    "passes": 0,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-03-04T07:23:09.091Z",
+    "end": "2021-03-04T07:23:35.719Z",
+    "duration": 26628,
+    "testsRegistered": 3,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 2,
+    "hasOther": true,
+    "skipped": 3,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "88ef3c2a-f34f-48a7-bb83-064438ceea84",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "92dff0d6-e4f2-4e49-a90f-dda1ec431c8f",
+          "title": "Demo Test Module",
+          "fullFile": "E:\\Penske\\Gondola\\web101\\built\\tests\\demo_test.js",
+          "file": "\\built\\tests\\demo_test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook: codeceptjs.beforeSuite",
+              "fullTitle": "Demo Test Module \"before all\" hook: codeceptjs.beforeSuite",
+              "timedOut": false,
+              "duration": 9478,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteSetup(suite)",
+              "err": {},
+              "uuid": "11ac077a-1c15-42b7-b5b1-aad0757d7124",
+              "parentUUID": "92dff0d6-e4f2-4e49-a90f-dda1ec431c8f",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"before each\" hook: codeceptjs.before for \"Demo 1 @regression\"",
+              "fullTitle": "Demo Test Module \"before each\" hook: codeceptjs.before for \"Demo 1 @regression\"",
+              "timedOut": false,
+              "duration": 8037,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "scenario.setup(suite)",
+              "err": {
+                "message": "Error: Can't connect to WebDriver.\nError: Failed to create session.\nsession not created: This version of ChromeDriver only supports Chrome version 89\nCurrent browser version is 88.0.4324.190 with binary path C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'\nSystem info: host: 'LGDN15026-W10', ip: '192.168.191.139', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'\nDriver info: driver.version: unknown\nremote stacktrace: Backtrace:\n\tOrdinal0 [0x00B6E7D3+124883]\n\tOrdinal0 [0x00B6E7B1+124849]\n\tGetHandleVerifier [0x00DB8688+193832]\n\tGetHandleVerifier [0x00DD3AC5+305509]\n\tGetHandleVerifier [0x00DD021B+291003]\n\tGetHandleVerifier [0x00DCE0AC+282444]\n\tGetHandleVerifier [0x00DF4A90+440624]\n\tGetHandleVerifier [0x00DF47FC+439964]\n\tGetHandleVerifier [0x00DF154B+426987]\n\tGetHandleVerifier [0x00DD4FFD+310941]\n\tGetHandleVerifier [0x00DD5D8E+314414]\n\tGetHandleVerifier [0x00DD5D19+314297]\n\tGetHandleVerifier [0x00E931EC+1089676]\n\tGetHandleVerifier [0x00E917C9+1082985]\n\tGetHandleVerifier [0x00E913A3+1081923]\n\tGetHandleVerifier [0x00F8D9FD+2115741]\n\tOrdinal0 [0x00CBB82E+1488942]\n\tOrdinal0 [0x00C55A7D+1071741]\n\tOrdinal0 [0x00C5559B+1070491]\n\tOrdinal0 [0x00C554B1+1070257]\n\tOrdinal0 [0x00C8FF53+1310547]\n\tBaseThreadInitThunk [0x750C6359+25]\n\tRtlGetAppContainerNamedObjectPath [0x77357C24+228]\n\tRtlGetAppContainerNamedObjectPath [0x77357BF4+180]\n\n\nPlease make sure Selenium Server (ChromeDriver or PhantomJS) is running and accessible",
+                "estack": "Can't connect to WebDriver.\nError: Failed to create session.\nsession not created: This version of ChromeDriver only supports Chrome version 89\nCurrent browser version is 88.0.4324.190 with binary path C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'\nSystem info: host: 'LGDN15026-W10', ip: '192.168.191.139', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'\nDriver info: driver.version: unknown\nremote stacktrace: Backtrace:\n\tOrdinal0 [0x00B6E7D3+124883]\n\tOrdinal0 [0x00B6E7B1+124849]\n\tGetHandleVerifier [0x00DB8688+193832]\n\tGetHandleVerifier [0x00DD3AC5+305509]\n\tGetHandleVerifier [0x00DD021B+291003]\n\tGetHandleVerifier [0x00DCE0AC+282444]\n\tGetHandleVerifier [0x00DF4A90+440624]\n\tGetHandleVerifier [0x00DF47FC+439964]\n\tGetHandleVerifier [0x00DF154B+426987]\n\tGetHandleVerifier [0x00DD4FFD+310941]\n\tGetHandleVerifier [0x00DD5D8E+314414]\n\tGetHandleVerifier [0x00DD5D19+314297]\n\tGetHandleVerifier [0x00E931EC+1089676]\n\tGetHandleVerifier [0x00E917C9+1082985]\n\tGetHandleVerifier [0x00E913A3+1081923]\n\tGetHandleVerifier [0x00F8D9FD+2115741]\n\tOrdinal0 [0x00CBB82E+1488942]\n\tOrdinal0 [0x00C55A7D+1071741]\n\tOrdinal0 [0x00C5559B+1070491]\n\tOrdinal0 [0x00C554B1+1070257]\n\tOrdinal0 [0x00C8FF53+1310547]\n\tBaseThreadInitThunk [0x750C6359+25]\n\tRtlGetAppContainerNamedObjectPath [0x77357C24+228]\n\tRtlGetAppContainerNamedObjectPath [0x77357BF4+180]\n\n\nPlease make sure Selenium Server (ChromeDriver or PhantomJS) is running and accessible",
+                "diff": null
+              },
+              "uuid": "79dc6d50-b0b6-4003-a914-ca7c52effdcd",
+              "parentUUID": "92dff0d6-e4f2-4e49-a90f-dda1ec431c8f",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook: codeceptjs.afterSuite",
+              "fullTitle": "Demo Test Module \"after all\" hook: codeceptjs.afterSuite",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteTeardown(suite)",
+              "err": {},
+              "uuid": "1fa4773b-1bb6-49fb-ad1d-3fb311c6790e",
+              "parentUUID": "92dff0d6-e4f2-4e49-a90f-dda1ec431c8f",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"after each\" hook: finalize codeceptjs",
+              "fullTitle": "Demo Test Module \"after each\" hook: finalize codeceptjs",
+              "timedOut": false,
+              "duration": 1,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.teardown(suite)",
+              "err": {},
+              "uuid": "31cc9986-ca34-4920-8706-f24a5070702a",
+              "parentUUID": "92dff0d6-e4f2-4e49-a90f-dda1ec431c8f",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Demo 1 @regression",
+              "fullTitle": "Demo Test Module: Demo 1 @regression",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await gondola_1.gondola.navigate(\"https://demo.gondolatest.com\");\nawait ShopActions_1.default.checkTotalPayment(\"239.97\");",
+              "err": {},
+              "uuid": "8ed7717c-7799-4588-ba90-32af2e27aa13",
+              "parentUUID": "92dff0d6-e4f2-4e49-a90f-dda1ec431c8f",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Demo 2 @smoke",
+              "fullTitle": "Demo Test Module: Demo 2 @smoke",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await gondola_1.gondola.navigate(\"https://demo.gondolatest.com\");\nawait ShopActions_1.default.checkTotalPayment(\"239.98\");",
+              "err": {},
+              "uuid": "e4a74fe6-35d4-4b2e-973c-7ff305d3f57a",
+              "parentUUID": "92dff0d6-e4f2-4e49-a90f-dda1ec431c8f",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [
+            "8ed7717c-7799-4588-ba90-32af2e27aa13",
+            "e4a74fe6-35d4-4b2e-973c-7ff305d3f57a"
+          ],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 0
+        },
+        {
+          "uuid": "fe99a5e9-7009-4dfc-94c4-b838a6176e3e",
+          "title": "Simple Test",
+          "fullFile": "E:\\Penske\\Gondola\\web101\\built\\tests\\demo_test.js",
+          "file": "\\built\\tests\\demo_test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook: codeceptjs.beforeSuite",
+              "fullTitle": "Simple Test \"before all\" hook: codeceptjs.beforeSuite",
+              "timedOut": false,
+              "duration": 1,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteSetup(suite)",
+              "err": {},
+              "uuid": "e3452960-60b5-49b1-ad32-fe3c5e396be7",
+              "parentUUID": "fe99a5e9-7009-4dfc-94c4-b838a6176e3e",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"before each\" hook: codeceptjs.before for \"1st simple test case @smoke\"",
+              "fullTitle": "Simple Test \"before each\" hook: codeceptjs.before for \"1st simple test case @smoke\"",
+              "timedOut": false,
+              "duration": 8482,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "scenario.setup(suite)",
+              "err": {
+                "message": "Error: Can't connect to WebDriver.\nError: Failed to create session.\nsession not created: This version of ChromeDriver only supports Chrome version 89\nCurrent browser version is 88.0.4324.190 with binary path C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'\nSystem info: host: 'LGDN15026-W10', ip: '192.168.191.139', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'\nDriver info: driver.version: unknown\nremote stacktrace: Backtrace:\n\tOrdinal0 [0x00B6E7D3+124883]\n\tOrdinal0 [0x00B6E7B1+124849]\n\tGetHandleVerifier [0x00DB8688+193832]\n\tGetHandleVerifier [0x00DD3AC5+305509]\n\tGetHandleVerifier [0x00DD021B+291003]\n\tGetHandleVerifier [0x00DCE0AC+282444]\n\tGetHandleVerifier [0x00DF4A90+440624]\n\tGetHandleVerifier [0x00DF47FC+439964]\n\tGetHandleVerifier [0x00DF154B+426987]\n\tGetHandleVerifier [0x00DD4FFD+310941]\n\tGetHandleVerifier [0x00DD5D8E+314414]\n\tGetHandleVerifier [0x00DD5D19+314297]\n\tGetHandleVerifier [0x00E931EC+1089676]\n\tGetHandleVerifier [0x00E917C9+1082985]\n\tGetHandleVerifier [0x00E913A3+1081923]\n\tGetHandleVerifier [0x00F8D9FD+2115741]\n\tOrdinal0 [0x00CBB82E+1488942]\n\tOrdinal0 [0x00C55A7D+1071741]\n\tOrdinal0 [0x00C5559B+1070491]\n\tOrdinal0 [0x00C554B1+1070257]\n\tOrdinal0 [0x00C8FF53+1310547]\n\tBaseThreadInitThunk [0x750C6359+25]\n\tRtlGetAppContainerNamedObjectPath [0x77357C24+228]\n\tRtlGetAppContainerNamedObjectPath [0x77357BF4+180]\n\n\nPlease make sure Selenium Server (ChromeDriver or PhantomJS) is running and accessible",
+                "estack": "Can't connect to WebDriver.\nError: Failed to create session.\nsession not created: This version of ChromeDriver only supports Chrome version 89\nCurrent browser version is 88.0.4324.190 with binary path C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'\nSystem info: host: 'LGDN15026-W10', ip: '192.168.191.139', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'\nDriver info: driver.version: unknown\nremote stacktrace: Backtrace:\n\tOrdinal0 [0x00B6E7D3+124883]\n\tOrdinal0 [0x00B6E7B1+124849]\n\tGetHandleVerifier [0x00DB8688+193832]\n\tGetHandleVerifier [0x00DD3AC5+305509]\n\tGetHandleVerifier [0x00DD021B+291003]\n\tGetHandleVerifier [0x00DCE0AC+282444]\n\tGetHandleVerifier [0x00DF4A90+440624]\n\tGetHandleVerifier [0x00DF47FC+439964]\n\tGetHandleVerifier [0x00DF154B+426987]\n\tGetHandleVerifier [0x00DD4FFD+310941]\n\tGetHandleVerifier [0x00DD5D8E+314414]\n\tGetHandleVerifier [0x00DD5D19+314297]\n\tGetHandleVerifier [0x00E931EC+1089676]\n\tGetHandleVerifier [0x00E917C9+1082985]\n\tGetHandleVerifier [0x00E913A3+1081923]\n\tGetHandleVerifier [0x00F8D9FD+2115741]\n\tOrdinal0 [0x00CBB82E+1488942]\n\tOrdinal0 [0x00C55A7D+1071741]\n\tOrdinal0 [0x00C5559B+1070491]\n\tOrdinal0 [0x00C554B1+1070257]\n\tOrdinal0 [0x00C8FF53+1310547]\n\tBaseThreadInitThunk [0x750C6359+25]\n\tRtlGetAppContainerNamedObjectPath [0x77357C24+228]\n\tRtlGetAppContainerNamedObjectPath [0x77357BF4+180]\n\n\nPlease make sure Selenium Server (ChromeDriver or PhantomJS) is running and accessible",
+                "diff": null
+              },
+              "uuid": "8c3e31fe-a68f-484d-b6b1-3e1096c3b6f9",
+              "parentUUID": "fe99a5e9-7009-4dfc-94c4-b838a6176e3e",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook: codeceptjs.afterSuite",
+              "fullTitle": "Simple Test \"after all\" hook: codeceptjs.afterSuite",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteTeardown(suite)",
+              "err": {},
+              "uuid": "ce6cb666-e8df-4f8c-91e3-e4ec69d46ae9",
+              "parentUUID": "fe99a5e9-7009-4dfc-94c4-b838a6176e3e",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"after each\" hook: finalize codeceptjs",
+              "fullTitle": "Simple Test \"after each\" hook: finalize codeceptjs",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.teardown(suite)",
+              "err": {},
+              "uuid": "058478e1-c575-4eea-b15c-bdbde77063d3",
+              "parentUUID": "fe99a5e9-7009-4dfc-94c4-b838a6176e3e",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "1st simple test case @smoke",
+              "fullTitle": "Simple Test: 1st simple test case @smoke",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await gondola_1.gondola.navigate(\"http://google.com\");\nawait gondola_1.gondola.checkWindowExist(\"Google\");",
+              "err": {},
+              "uuid": "ad247b1d-7ee2-423f-983f-e07c00bfee3c",
+              "parentUUID": "fe99a5e9-7009-4dfc-94c4-b838a6176e3e",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [
+            "ad247b1d-7ee2-423f-983f-e07c00bfee3c"
+          ],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 0
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 0
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "6.2.3"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "gondola",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "results",
+        "inlineAssets": true,
+        "timestamp": "isoDateTime",
+        "reportFilename": "gondola",
+        "autoOpen": true,
+        "reportPageTitle": "Gondola Test Result"
+      },
+      "version": "5.2.0"
+    }
+  }
+}

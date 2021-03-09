@@ -1,0 +1,318 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 3,
+    "passes": 2,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-02-25T04:07:22.570Z",
+    "end": "2021-02-25T04:08:03.976Z",
+    "duration": 41406,
+    "testsRegistered": 3,
+    "passPercent": 66.66666666666666,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "be866fe8-3a67-4c26-bf18-bbf9dc024091",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5b585baf-73f5-401d-b8fe-39007d22f979",
+          "title": "Demo Test Module",
+          "fullFile": "E:\\Penske\\Gondola\\web101\\built\\tests\\demo_test.js",
+          "file": "\\built\\tests\\demo_test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook: codeceptjs.beforeSuite",
+              "fullTitle": "Demo Test Module \"before all\" hook: codeceptjs.beforeSuite",
+              "timedOut": false,
+              "duration": 17046,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteSetup(suite)",
+              "err": {},
+              "uuid": "2ebe8736-ae23-4049-a9ff-ec6bb0c2a9c7",
+              "parentUUID": "5b585baf-73f5-401d-b8fe-39007d22f979",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"before each\" hook: codeceptjs.before",
+              "fullTitle": "Demo Test Module \"before each\" hook: codeceptjs.before",
+              "timedOut": false,
+              "duration": 1987,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.setup(suite)",
+              "err": {},
+              "uuid": "591d5cf8-f169-4220-ae05-ae71e330f9c9",
+              "parentUUID": "5b585baf-73f5-401d-b8fe-39007d22f979",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook: codeceptjs.afterSuite",
+              "fullTitle": "Demo Test Module \"after all\" hook: codeceptjs.afterSuite",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteTeardown(suite)",
+              "err": {},
+              "uuid": "5cce790c-6b20-439c-b0df-d6df122ceee8",
+              "parentUUID": "5b585baf-73f5-401d-b8fe-39007d22f979",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"after each\" hook: finalize codeceptjs",
+              "fullTitle": "Demo Test Module \"after each\" hook: finalize codeceptjs",
+              "timedOut": false,
+              "duration": 312,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.teardown(suite)",
+              "err": {},
+              "uuid": "fc2bece4-f110-41ae-8b27-5b63b74ceefb",
+              "parentUUID": "5b585baf-73f5-401d-b8fe-39007d22f979",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Demo 1 @regression",
+              "fullTitle": "Demo Test Module: Demo 1 @regression",
+              "timedOut": false,
+              "duration": 6238,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await gondola_1.gondola.navigate(\"https://demo.gondolatest.com\");\nawait ShopActions_1.default.checkTotalPayment(\"239.97\");",
+              "err": {},
+              "uuid": "59b94582-e494-4ad4-a174-ac80023a52bb",
+              "parentUUID": "5b585baf-73f5-401d-b8fe-39007d22f979",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Demo 2 @smoke",
+              "fullTitle": "Demo Test Module: Demo 2 @smoke",
+              "timedOut": false,
+              "duration": 5345,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"Demo_2_@sm_f693421e-5f94-49e0-8f3e-64da6552656f.failed.png\"",
+              "code": "await gondola_1.gondola.navigate(\"https://demo.gondolatest.com\");\nawait ShopActions_1.default.checkTotalPayment(\"239.98\");",
+              "err": {
+                "message": "Error: Element \"{\"xpath\":\"//h3[.='Total: $239.98']\"}\" was not found by text|CSS|XPath",
+                "estack": "Element \"{\"xpath\":\"//h3[.='Total: $239.98']\"}\" was not found by text|CSS|XPath\n\nScenario Steps:\n\n- gondola.checkControlExist({\"xpath\":\"//h3[.='Total: $239.98']\"}) at ShopActions.checkTotalPayment (built\\actions\\ShopActions.js:17:33)\n- gondola.click({\"css\":\"svg[width='30']\"}, \"\") at ShopActions.checkTotalPayment (built\\actions\\ShopActions.js:16:33)\n- gondola.click({\"xpath\":\"//section[@class='content']/div[3]/button[@class='add']\"}, \"\") at ShopActions.checkTotalPayment (built\\actions\\ShopActions.js:15:33)\n- gondola.click({\"xpath\":\"//section[@class='content']/div[2]/button[@class='add']\"}, \"\") at ShopActions.checkTotalPayment (built\\actions\\ShopActions.js:14:33)\n- gondola.click({\"xpath\":\"//section[@class='content']/div[1]/button[@class='add']\"}, \"\") at ShopActions.checkTotalPayment (built\\actions\\ShopActions.js:13:33)\n- gondola.navigate(\"https://demo.gondolatest.com\") at Test.<anonymous> (built\\tests\\demo_test.js:14:29)\n\n",
+                "diff": null
+              },
+              "uuid": "f693421e-5f94-49e0-8f3e-64da6552656f",
+              "parentUUID": "5b585baf-73f5-401d-b8fe-39007d22f979",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "59b94582-e494-4ad4-a174-ac80023a52bb"
+          ],
+          "failures": [
+            "f693421e-5f94-49e0-8f3e-64da6552656f"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 11583,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 0
+        },
+        {
+          "uuid": "7df3d594-eb49-4c36-ae5e-3713d389f181",
+          "title": "Simple Test",
+          "fullFile": "E:\\Penske\\Gondola\\web101\\built\\tests\\demo_test.js",
+          "file": "\\built\\tests\\demo_test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook: codeceptjs.beforeSuite",
+              "fullTitle": "Simple Test \"before all\" hook: codeceptjs.beforeSuite",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteSetup(suite)",
+              "err": {},
+              "uuid": "dd30953a-cffc-43ee-af38-95d1a7791c2f",
+              "parentUUID": "7df3d594-eb49-4c36-ae5e-3713d389f181",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"before each\" hook: codeceptjs.before",
+              "fullTitle": "Simple Test \"before each\" hook: codeceptjs.before",
+              "timedOut": false,
+              "duration": 2226,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.setup(suite)",
+              "err": {},
+              "uuid": "839cc40d-e656-4175-a744-acb130210a7c",
+              "parentUUID": "7df3d594-eb49-4c36-ae5e-3713d389f181",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook: codeceptjs.afterSuite",
+              "fullTitle": "Simple Test \"after all\" hook: codeceptjs.afterSuite",
+              "timedOut": false,
+              "duration": 1,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteTeardown(suite)",
+              "err": {},
+              "uuid": "e44185ba-6758-4f4a-be80-3ed3be029773",
+              "parentUUID": "7df3d594-eb49-4c36-ae5e-3713d389f181",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"after each\" hook: finalize codeceptjs",
+              "fullTitle": "Simple Test \"after each\" hook: finalize codeceptjs",
+              "timedOut": false,
+              "duration": 347,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.teardown(suite)",
+              "err": {},
+              "uuid": "64d4caef-4b3b-4420-94db-d99961af99c3",
+              "parentUUID": "7df3d594-eb49-4c36-ae5e-3713d389f181",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "1st simple test case",
+              "fullTitle": "Simple Test: 1st simple test case",
+              "timedOut": false,
+              "duration": 2789,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await gondola_1.gondola.navigate(\"http://google.com\");\nawait gondola_1.gondola.checkWindowExist(\"Google\");",
+              "err": {},
+              "uuid": "dc398902-0e8c-4985-b42d-9a5fc383d42c",
+              "parentUUID": "7df3d594-eb49-4c36-ae5e-3713d389f181",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "dc398902-0e8c-4985-b42d-9a5fc383d42c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2789,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 0
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 0
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "6.2.3"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "gondola",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "results",
+        "inlineAssets": true,
+        "timestamp": "isoDateTime",
+        "reportFilename": "gondola",
+        "autoOpen": true,
+        "reportPageTitle": "Gondola Test Result"
+      },
+      "version": "5.1.0"
+    }
+  }
+}

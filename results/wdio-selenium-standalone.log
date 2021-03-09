@@ -1,0 +1,56 @@
+14:00:35.626 INFO [GridLauncherV3.parse] - Selenium server version: 3.141.59, revision: e82be7d358
+14:00:35.750 INFO [GridLauncherV3.lambda$buildLaunchers$3] - Launching a standalone Selenium Server on port 4444
+2021-02-25 14:00:35.815:INFO::main: Logging initialized @548ms to org.seleniumhq.jetty9.util.log.StdErrLog
+14:00:36.160 INFO [WebDriverServlet.<init>] - Initialising WebDriverServlet
+14:00:36.581 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 4444
+14:00:36.987 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "chrome",
+  "goog:chromeOptions": {
+    "args": [
+      "--disable-gpu",
+      "--no-sandbox"
+    ]
+  }
+}
+14:00:36.989 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+Starting ChromeDriver 88.0.4324.96 (68dba2d8a0b149a1d3afac56fa74648032bcf46b-refs/branch-heads/4324@{#1784}) on port 16425
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+14:00:41.970 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+14:00:42.039 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 959d6016b176e6c0680962662bd2e051 (org.openqa.selenium.chrome.ChromeDriverService)
+14:00:48.428 INFO [ActiveSessions$1.onStop] - Removing session 959d6016b176e6c0680962662bd2e051 (org.openqa.selenium.chrome.ChromeDriverService)
+14:00:49.069 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "chrome",
+  "goog:chromeOptions": {
+    "args": [
+      "--disable-gpu",
+      "--no-sandbox"
+    ]
+  }
+}
+14:00:49.069 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+Starting ChromeDriver 88.0.4324.96 (68dba2d8a0b149a1d3afac56fa74648032bcf46b-refs/branch-heads/4324@{#1784}) on port 38688
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+14:00:50.769 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+14:00:50.771 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session ec6bccca8a8b75cdc1b66f9696554f67 (org.openqa.selenium.chrome.ChromeDriverService)
+14:00:56.521 INFO [ActiveSessions$1.onStop] - Removing session ec6bccca8a8b75cdc1b66f9696554f67 (org.openqa.selenium.chrome.ChromeDriverService)
+14:00:57.112 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "chrome",
+  "goog:chromeOptions": {
+    "args": [
+      "--disable-gpu",
+      "--no-sandbox"
+    ]
+  }
+}
+14:00:57.113 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+Starting ChromeDriver 88.0.4324.96 (68dba2d8a0b149a1d3afac56fa74648032bcf46b-refs/branch-heads/4324@{#1784}) on port 11989
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+14:00:58.929 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+14:00:58.931 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session acefd7baf413bf2da25f90bbbc24572a (org.openqa.selenium.chrome.ChromeDriverService)
+14:01:02.650 INFO [ActiveSessions$1.onStop] - Removing session acefd7baf413bf2da25f90bbbc24572a (org.openqa.selenium.chrome.ChromeDriverService)

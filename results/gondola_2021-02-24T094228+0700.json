@@ -1,0 +1,185 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-02-24T02:41:38.291Z",
+    "end": "2021-02-24T02:42:28.735Z",
+    "duration": 50444,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "66774165-e82b-4d59-8726-2950766b20d6",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "027c67fb-13e0-4a3b-bdba-80995fd39edd",
+          "title": "Demo Test Module",
+          "fullFile": "e:\\Penske\\Gondola\\web101\\built\\tests\\demo_test.js",
+          "file": "e:\\Penske\\Gondola\\web101\\built\\tests\\demo_test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook: codeceptjs.beforeSuite",
+              "fullTitle": "Demo Test Module \"before all\" hook: codeceptjs.beforeSuite",
+              "timedOut": false,
+              "duration": 8159,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteSetup(suite)",
+              "err": {},
+              "uuid": "958aec2b-846a-4e29-8baf-46514da335a1",
+              "parentUUID": "027c67fb-13e0-4a3b-bdba-80995fd39edd",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"before each\" hook: codeceptjs.before",
+              "fullTitle": "Demo Test Module \"before each\" hook: codeceptjs.before",
+              "timedOut": false,
+              "duration": 1610,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.setup(suite)",
+              "err": {},
+              "uuid": "e510a99b-090c-4ba7-ba27-1b46166cb748",
+              "parentUUID": "027c67fb-13e0-4a3b-bdba-80995fd39edd",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook: codeceptjs.afterSuite",
+              "fullTitle": "Demo Test Module \"after all\" hook: codeceptjs.afterSuite",
+              "timedOut": false,
+              "duration": 1,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteTeardown(suite)",
+              "err": {},
+              "uuid": "a142b374-5b35-4563-96b6-92476fe6defc",
+              "parentUUID": "027c67fb-13e0-4a3b-bdba-80995fd39edd",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"after each\" hook: finalize codeceptjs",
+              "fullTitle": "Demo Test Module \"after each\" hook: finalize codeceptjs",
+              "timedOut": false,
+              "duration": 164,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.teardown(suite)",
+              "err": {},
+              "uuid": "bed36b3f-381a-4ff8-b9ee-27ff45bea396",
+              "parentUUID": "027c67fb-13e0-4a3b-bdba-80995fd39edd",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Demo 1",
+              "fullTitle": "Demo Test Module: Demo 1",
+              "timedOut": false,
+              "duration": 40458,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"Demo_1_36094bcc-5ff1-4a28-a1df-78eb653d1a05.failed.png\"",
+              "code": "await gondola_1.gondola.navigate(\"https://demo.gondolatest.com\");\nawait gondola_1.gondola.click({ xpath: `//section[@class='content']/div[1]/button[@class='add']` });\nawait gondola_1.gondola.click({ xpath: `//section[@class='content']/div[2]/button[@class='add']` });\nawait gondola_1.gondola.click({ xpath: `//section[@class='content']/div[3]/button[@class='add']` });\nawait gondola_1.gondola.click({ css: `svg[width='30']` });\nawait gondola_1.gondola.checkControlExist({ xpath: `//h3[.='Total: $239.97']` });",
+              "err": {
+                "message": "timeout: timeout: Timed out receiving message from renderer: -0.001\n  (Session info: chrome=88.0.4324.182)",
+                "estack": "timeout: Timed out receiving message from renderer: -0.001\n  (Session info: chrome=88.0.4324.182)\n\nScenario Steps:\n\n- gondola.navigate(\"https://demo.gondolatest.com\") at Test.<anonymous> (e:\\Penske\\Gondola\\web101\\built\\tests\\demo_test.js:6:29)\n\n",
+                "diff": null
+              },
+              "uuid": "36094bcc-5ff1-4a28-a1df-78eb653d1a05",
+              "parentUUID": "027c67fb-13e0-4a3b-bdba-80995fd39edd",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "36094bcc-5ff1-4a28-a1df-78eb653d1a05"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 40458,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 0
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 0
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "6.2.3"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "gondola",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "results",
+        "inlineAssets": true,
+        "timestamp": "isoDateTime",
+        "reportFilename": "gondola",
+        "autoOpen": true,
+        "reportPageTitle": "Gondola Test Result"
+      },
+      "version": "5.1.0"
+    }
+  }
+}

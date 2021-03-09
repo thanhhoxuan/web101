@@ -1,0 +1,83 @@
+{
+    "tests": "./built/**/*_test.js",
+    "timeout": 5000,
+    "output": "./results",
+    "helpers": {
+        "WebDriver": {
+            "url": "https://demo.gondolatest.com",
+            "browser": "chrome",
+            "restart": true,
+            "keepBrowserState": false,
+            "keepCookies": false,
+            "waitForTimeout": 10000,
+            "timeouts": {
+                "script": 60000,
+                "pageLoad": 10000
+            },
+            "desiredCapabilities": {
+                "chromeOptions": {
+                    "args": [
+                        "--disable-gpu",
+                        "--no-sandbox"
+                    ]
+                },
+                "firefoxOptions": {
+                    "args": [
+                        "--disable-gpu",
+                        "--no-sandbox"
+                    ]
+                }
+            }
+        },
+        "Mochawesome": {
+            "uniqueScreenshotNames": "true"
+        }
+    },
+    "include": {},
+    "bootstrap": false,
+    "plugins": {
+        "screenshotOnFail": {
+            "enabled": true
+        },
+        "wdio": {
+            "services": [
+                "selenium-standalone"
+            ],
+            "enabled": true
+        }
+    },
+    "mocha": {
+        "reporterOptions": {
+            "reportDir": "results",
+            "inlineAssets": true,
+            "timestamp": "isoDateTime",
+            "reportFilename": "gondola",
+            "autoOpen": true,
+            "reportPageTitle": "Gondola Test Result"
+        }
+    },
+    "multiple": {
+        "parallel": {
+            "chunks": 2,
+            "browsers": [
+                "chrome",
+                "firefox"
+            ]
+        },
+        "regression": {
+            "browsers": [
+                "chrome",
+                "firefox",
+                "internet explorer"
+            ]
+        },
+        "smoke": {
+            "grep": "smoke",
+            "browsers": [
+                "chrome",
+                "firefox"
+            ]
+        }
+    },
+    "name": "ts_example"
+}
