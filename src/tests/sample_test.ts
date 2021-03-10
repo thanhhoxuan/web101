@@ -9,3 +9,7 @@ TestCase("1st simple test case", async () => {
     await gondola.navigate("http://google.com");
     await gondola.checkWindowExist("Google");
 }).tag("smoke");
+TestCase("1st simple test case", async () => {
+    await gondola.navigate("http://google.com");
+    await gondola.checkWindowExist("Google");
+}).tag("smoke");
