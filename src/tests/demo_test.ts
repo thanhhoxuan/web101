@@ -14,3 +14,7 @@ TestCase("Demo 3", async () => {
     await gondola.navigate("https://demo.gondolatest.com");
     await ShopActions.checkTotalPayment("239.98");
 }).tag("smoke");
+TestCase("Demo 4", async () => {
+    await gondola.navigate("https://demo.gondolatest.com");
+    await ShopActions.checkTotalPayment("239.98");
+}).tag("smoke");
